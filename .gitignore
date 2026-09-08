@@ -1,0 +1,24 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+.ipynb_checkpoints/
+.pytest_cache/
+
+.DS_Store
+*.log
+
+.streamlit/secrets.toml
+
+# Large ML/data files
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+*.safetensors
