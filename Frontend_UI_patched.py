@@ -434,14 +434,6 @@ st.markdown(
     .top-chat h2 { margin: 0; color: white; }
     .top-chat p { color: #dbeafe; margin-top: 5px; }
 
-    .forecast-card {
-        background-color: #1e293b;
-        padding: 15px;
-        border-radius: 18px;
-        border: 1px solid #334155;
-        text-align: center;
-        min-height: 300px;
-    }
 
     .forecast-icon {
         font-size: 48px;
@@ -854,6 +846,7 @@ except (TypeError, ValueError):
     st.stop()
 
 for i, col in enumerate(forecast_columns):
+
     forecast_date = datetime.strptime(
         daily_times[i],
         "%Y-%m-%d",
@@ -869,6 +862,7 @@ for i, col in enumerate(forecast_columns):
         )
 
     formatted_date = forecast_date.strftime("%d %b %Y")
+
     day_icon, day_condition = weather_description(
         daily_codes[i],
         language,
@@ -880,26 +874,38 @@ for i, col in enumerate(forecast_columns):
     day_wind = safe_float(daily_wind_raw[i])
 
     with col:
-        st.markdown(
-            '<div class="forecast-card">',
-            unsafe_allow_html=True,
-        )
-        st.subheader(day)
-        st.caption(formatted_date)
-        st.markdown(
-            f'<div class="forecast-icon">{escape(day_icon)}</div>',
-            unsafe_allow_html=True,
-        )
-        st.write(day_condition)
-        st.markdown(
-            f'<div style="font-size:24px; font-weight:bold; margin-top:8px;">'
-            f'{day_high:.1f}{symbol}</div>',
-            unsafe_allow_html=True,
-        )
-        st.caption(f"{t['todays_low']}: {day_low:.1f}{symbol}")
-        st.write(f"☔ {t['rain']}: {day_rain}%")
-        st.write(f"💨 {t['wind']}: {day_wind:.1f} km/h")
-        st.markdown("</div>", unsafe_allow_html=True)
+
+        # Use Streamlit's native container
+        with st.container(border=True):
+
+            st.markdown(
+                f"### {day}"
+            )
+
+            st.caption(formatted_date)
+
+            st.markdown(
+                f"<div class='forecast-icon'>{escape(day_icon)}</div>",
+                unsafe_allow_html=True,
+            )
+
+            st.write(day_condition)
+
+            st.markdown(
+                f"**{day_high:.1f}{symbol}**"
+            )
+
+            st.caption(
+                f"{t['todays_low']}: {day_low:.1f}{symbol}"
+            )
+
+            st.write(
+                f"☔ {t['rain']}: {day_rain}%"
+            )
+
+            st.write(
+                f"💨 {t['wind']}: {day_wind:.1f} km/h"
+            )
 
 
 # =============================================================
