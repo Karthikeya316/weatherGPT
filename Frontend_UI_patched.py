@@ -1,14 +1,6 @@
 """
 WeatherGPT — multilingual weather dashboard and rule-based weather assistant.
 
-Features:
-- Open-Meteo geocoding and live weather data
-- Current conditions + 7-day forecast
-- Celsius/Fahrenheit display
-- English, Hindi, Telugu, Tamil, Kannada and Malayalam UI
-- Weather-aware chat responses
-- Optional voice recording input when supported by Streamlit
-
 Run:
     streamlit run Frontend_UI_patched.py
 """
@@ -79,23 +71,14 @@ LANGUAGES = {
         "unknown": "Unknown",
     },
     "Hindi": {
-        "search_location": "📍 स्थान खोजें",
-        "temperature": "🌡️ तापमान",
-        "celsius": "सेल्सियस (°C)",
-        "fahrenheit": "फ़ारेनहाइट (°F)",
-        "current_weather": "वर्तमान मौसम",
-        "feels_like": "महसूस होने वाला तापमान",
-        "todays_high": "आज का अधिकतम",
-        "todays_low": "आज का न्यूनतम",
-        "weather_details": "📊 मौसम की जानकारी",
-        "humidity": "💧 नमी",
-        "wind": "💨 हवा",
-        "rain": "🌧️ बारिश",
-        "pressure": "🔵 वायुदाब",
-        "forecast": "📅 7-दिन का मौसम पूर्वानुमान",
-        "today": "आज",
-        "assistant": "🤖 WeatherGPT",
-        "assistant_desc": "मौसम के बारे में कुछ भी पूछें।",
+        "search_location": "📍 स्थान खोजें", "temperature": "🌡️ तापमान",
+        "celsius": "सेल्सियस (°C)", "fahrenheit": "फ़ारेनहाइट (°F)",
+        "current_weather": "वर्तमान मौसम", "feels_like": "महसूस होने वाला तापमान",
+        "todays_high": "आज का अधिकतम", "todays_low": "आज का न्यूनतम",
+        "weather_details": "📊 मौसम की जानकारी", "humidity": "💧 नमी",
+        "wind": "💨 हवा", "rain": "🌧️ बारिश", "pressure": "🔵 वायुदाब",
+        "forecast": "📅 7-दिन का मौसम पूर्वानुमान", "today": "आज",
+        "assistant": "🤖 WeatherGPT", "assistant_desc": "मौसम के बारे में कुछ भी पूछें।",
         "chat_placeholder": "आज के मौसम के बारे में पूछें...",
         "voice_received": "🎙️ आवाज़ की रिकॉर्डिंग प्राप्त हुई। इसे मौसम के प्रश्न में बदलने के लिए Speech-to-Text API जोड़ें।",
         "city_not_found": "❌ शहर नहीं मिला। कृपया सही शहर दर्ज करें।",
@@ -108,36 +91,22 @@ LANGUAGES = {
         "comfortable": "🌤️ आज तापमान काफी आरामदायक रहेगा।",
         "good_outdoor": "🚶 बाहर की गतिविधियों के लिए मौसम अच्छा है।",
         "outdoor_warning": "⚠️ बाहर जाने की योजना में थोड़ी तैयारी की आवश्यकता हो सकती है।",
-        "weather_update": "🌤️ मौसम अपडेट",
-        "condition": "स्थिति",
-        "main_title": "WeatherGPT 🌤️",
-        "main_subtitle": "आपका बुद्धिमान मौसम सहायक",
+        "weather_update": "🌤️ मौसम अपडेट", "condition": "स्थिति",
+        "main_title": "WeatherGPT 🌤️", "main_subtitle": "आपका बुद्धिमान मौसम सहायक",
         "footer": "WeatherGPT • AI मौसम सहायक • हैकाथॉन प्रोटोटाइप",
-        "enter_city": "शहर दर्ज करें...",
-        "language": "🌐 भाषा",
-        "loading_weather": "मौसम लोड हो रहा है...",
-        "hackathon": "हैकाथॉन प्रोटोटाइप",
-        "weather_ai": "मौसम + AI",
-        "unknown": "अज्ञात",
+        "enter_city": "शहर दर्ज करें...", "language": "🌐 भाषा",
+        "loading_weather": "मौसम लोड हो रहा है...", "hackathon": "हैकाथॉन प्रोटोटाइप",
+        "weather_ai": "मौसम + AI", "unknown": "अज्ञात",
     },
     "Telugu": {
-        "search_location": "📍 ప్రదేశాన్ని వెతకండి",
-        "temperature": "🌡️ ఉష్ణోగ్రత",
-        "celsius": "సెల్సియస్ (°C)",
-        "fahrenheit": "ఫారెన్‌హీట్ (°F)",
-        "current_weather": "ప్రస్తుత వాతావరణం",
-        "feels_like": "అనిపించే ఉష్ణోగ్రత",
-        "todays_high": "ఈరోజు గరిష్ఠం",
-        "todays_low": "ఈరోజు కనిష్ఠం",
-        "weather_details": "📊 వాతావరణ వివరాలు",
-        "humidity": "💧 తేమ",
-        "wind": "💨 గాలి",
-        "rain": "🌧️ వర్షం",
-        "pressure": "🔵 వాయు పీడనం",
-        "forecast": "📅 7 రోజుల వాతావరణ అంచనా",
-        "today": "ఈరోజు",
-        "assistant": "🤖 WeatherGPT",
-        "assistant_desc": "వాతావరణం గురించి ఏదైనా అడగండి.",
+        "search_location": "📍 ప్రదేశాన్ని వెతకండి", "temperature": "🌡️ ఉష్ణోగ్రత",
+        "celsius": "సెల్సియస్ (°C)", "fahrenheit": "ఫారెన్‌హీట్ (°F)",
+        "current_weather": "ప్రస్తుత వాతావరణం", "feels_like": "అనిపించే ఉష్ణోగ్రత",
+        "todays_high": "ఈరోజు గరిష్ఠం", "todays_low": "ఈరోజు కనిష్ఠం",
+        "weather_details": "📊 వాతావరణ వివరాలు", "humidity": "💧 తేమ",
+        "wind": "💨 గాలి", "rain": "🌧️ వర్షం", "pressure": "🔵 వాయు పీడనం",
+        "forecast": "📅 7 రోజుల వాతావరణ అంచనా", "today": "ఈరోజు",
+        "assistant": "🤖 WeatherGPT", "assistant_desc": "వాతావరణం గురించి ఏదైనా అడగండి.",
         "chat_placeholder": "ఈరోజు వాతావరణం గురించి అడగండి...",
         "voice_received": "🎙️ వాయిస్ రికార్డింగ్ అందింది. దీన్ని వాతావరణ ప్రశ్నగా మార్చడానికి Speech-to-Text APIని కనెక్ట్ చేయండి.",
         "city_not_found": "❌ నగరం కనుగొనబడలేదు. దయచేసి సరైన నగరాన్ని నమోదు చేయండి.",
@@ -150,36 +119,22 @@ LANGUAGES = {
         "comfortable": "🌤️ ఈరోజు ఉష్ణోగ్రత సౌకర్యవంతంగా ఉంటుంది.",
         "good_outdoor": "🚶 బయట కార్యకలాపాలకు వాతావరణం అనుకూలంగా ఉంది.",
         "outdoor_warning": "⚠️ బయట కార్యక్రమాలకు కొంత ముందస్తు జాగ్రత్త అవసరం కావచ్చు.",
-        "weather_update": "🌤️ వాతావరణ సమాచారం",
-        "condition": "పరిస్థితి",
-        "main_title": "WeatherGPT 🌤️",
-        "main_subtitle": "మీ తెలివైన వాతావరణ సహాయకుడు",
+        "weather_update": "🌤️ వాతావరణ సమాచారం", "condition": "పరిస్థితి",
+        "main_title": "WeatherGPT 🌤️", "main_subtitle": "మీ తెలివైన వాతావరణ సహాయకుడు",
         "footer": "WeatherGPT • AI వాతావరణ సహాయకుడు • హ్యాకథాన్ ప్రోటోటైప్",
-        "enter_city": "నగరాన్ని నమోదు చేయండి...",
-        "language": "🌐 భాష",
-        "loading_weather": "వాతావరణం లోడ్ అవుతోంది...",
-        "hackathon": "హ్యాకథాన్ ప్రోటోటైప్",
-        "weather_ai": "వాతావరణం + AI",
-        "unknown": "తెలియదు",
+        "enter_city": "నగరాన్ని నమోదు చేయండి...", "language": "🌐 భాష",
+        "loading_weather": "వాతావరణం లోడ్ అవుతోంది...", "hackathon": "హ్యాకథాన్ ప్రోటోటైప్",
+        "weather_ai": "వాతావరణం + AI", "unknown": "తెలియదు",
     },
     "Tamil": {
-        "search_location": "📍 இடத்தைத் தேடுங்கள்",
-        "temperature": "🌡️ வெப்பநிலை",
-        "celsius": "செல்சியஸ் (°C)",
-        "fahrenheit": "ஃபாரன்ஹீட் (°F)",
-        "current_weather": "தற்போதைய வானிலை",
-        "feels_like": "உணரப்படும் வெப்பநிலை",
-        "todays_high": "இன்றைய அதிகபட்சம்",
-        "todays_low": "இன்றைய குறைந்தபட்சம்",
-        "weather_details": "📊 வானிலை விவரங்கள்",
-        "humidity": "💧 ஈரப்பதம்",
-        "wind": "💨 காற்று",
-        "rain": "🌧️ மழை",
-        "pressure": "🔵 காற்றழுத்தம்",
-        "forecast": "📅 7 நாள் வானிலை முன்னறிவிப்பு",
-        "today": "இன்று",
-        "assistant": "🤖 WeatherGPT",
-        "assistant_desc": "வானிலை பற்றி எதையும் கேளுங்கள்.",
+        "search_location": "📍 இடத்தைத் தேடுங்கள்", "temperature": "🌡️ வெப்பநிலை",
+        "celsius": "செல்சியஸ் (°C)", "fahrenheit": "ஃபாரன்ஹீட் (°F)",
+        "current_weather": "தற்போதைய வானிலை", "feels_like": "உணரப்படும் வெப்பநிலை",
+        "todays_high": "இன்றைய அதிகபட்சம்", "todays_low": "இன்றைய குறைந்தபட்சம்",
+        "weather_details": "📊 வானிலை விவரங்கள்", "humidity": "💧 ஈரப்பதம்",
+        "wind": "💨 காற்று", "rain": "🌧️ மழை", "pressure": "🔵 காற்றழுத்தம்",
+        "forecast": "📅 7 நாள் வானிலை முன்னறிவிப்பு", "today": "இன்று",
+        "assistant": "🤖 WeatherGPT", "assistant_desc": "வானிலை பற்றி எதையும் கேளுங்கள்.",
         "chat_placeholder": "இன்றைய வானிலை பற்றி கேளுங்கள்...",
         "voice_received": "🎙️ குரல் பதிவு பெறப்பட்டது. இதை வானிலை கேள்வியாக மாற்ற Speech-to-Text API-ஐ இணைக்கவும்.",
         "city_not_found": "❌ நகரம் கிடைக்கவில்லை. சரியான நகரத்தை உள்ளிடவும்.",
@@ -192,36 +147,22 @@ LANGUAGES = {
         "comfortable": "🌤️ இன்று வெப்பநிலை சௌகரியமாக இருக்கும்.",
         "good_outdoor": "🚶 வெளிப்புற நடவடிக்கைகளுக்கு வானிலை ஏற்றதாக உள்ளது.",
         "outdoor_warning": "⚠️ வெளிப்புற திட்டங்களுக்கு சில முன்னெச்சரிக்கைகள் தேவைப்படலாம்.",
-        "weather_update": "🌤️ வானிலை தகவல்",
-        "condition": "நிலை",
-        "main_title": "WeatherGPT 🌤️",
-        "main_subtitle": "உங்கள் அறிவார்ந்த வானிலை துணை",
+        "weather_update": "🌤️ வானிலை தகவல்", "condition": "நிலை",
+        "main_title": "WeatherGPT 🌤️", "main_subtitle": "உங்கள் அறிவார்ந்த வானிலை துணை",
         "footer": "WeatherGPT • AI வானிலை உதவியாளர் • ஹேக்கத்தான் முன்மாதிரி",
-        "enter_city": "நகரத்தை உள்ளிடவும்...",
-        "language": "🌐 மொழி",
-        "loading_weather": "வானிலை ஏற்றப்படுகிறது...",
-        "hackathon": "ஹேக்கத்தான் முன்மாதிரி",
-        "weather_ai": "வானிலை + AI",
-        "unknown": "தெரியவில்லை",
+        "enter_city": "நகரத்தை உள்ளிடவும்...", "language": "🌐 மொழி",
+        "loading_weather": "வானிலை ஏற்றப்படுகிறது...", "hackathon": "ஹேக்கத்தான் முன்மாதிரி",
+        "weather_ai": "வானிலை + AI", "unknown": "தெரியவில்லை",
     },
     "Kannada": {
-        "search_location": "📍 ಸ್ಥಳ ಹುಡುಕಿ",
-        "temperature": "🌡️ ತಾಪಮಾನ",
-        "celsius": "ಸೆಲ್ಸಿಯಸ್ (°C)",
-        "fahrenheit": "ಫ್ಯಾರನ್‌ಹೀಟ್ (°F)",
-        "current_weather": "ಪ್ರಸ್ತುತ ಹವಾಮಾನ",
-        "feels_like": "ಅನುಭವವಾಗುವ ತಾಪಮಾನ",
-        "todays_high": "ಇಂದಿನ ಗರಿಷ್ಠ",
-        "todays_low": "ಇಂದಿನ ಕನಿಷ್ಠ",
-        "weather_details": "📊 ಹವಾಮಾನ ವಿವರಗಳು",
-        "humidity": "💧 ತೇವಾಂಶ",
-        "wind": "💨 ಗಾಳಿ",
-        "rain": "🌧️ ಮಳೆ",
-        "pressure": "🔵 ವಾಯು ಒತ್ತಡ",
-        "forecast": "📅 7 ದಿನಗಳ ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ",
-        "today": "ಇಂದು",
-        "assistant": "🤖 WeatherGPT",
-        "assistant_desc": "ಹವಾಮಾನದ ಬಗ್ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ.",
+        "search_location": "📍 ಸ್ಥಳ ಹುಡುಕಿ", "temperature": "🌡️ ತಾಪಮಾನ",
+        "celsius": "ಸೆಲ್ಸಿಯಸ್ (°C)", "fahrenheit": "ಫ್ಯಾರನ್‌ಹೀಟ್ (°F)",
+        "current_weather": "ಪ್ರಸ್ತುತ ಹವಾಮಾನ", "feels_like": "ಅನುಭವವಾಗುವ ತಾಪಮಾನ",
+        "todays_high": "ಇಂದಿನ ಗರಿಷ್ಠ", "todays_low": "ಇಂದಿನ ಕನಿಷ್ಠ",
+        "weather_details": "📊 ಹವಾಮಾನ ವಿವರಗಳು", "humidity": "💧 ತೇವಾಂಶ",
+        "wind": "💨 ಗಾಳಿ", "rain": "🌧️ ಮಳೆ", "pressure": "🔵 ವಾಯು ಒತ್ತಡ",
+        "forecast": "📅 7 ದಿನಗಳ ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ", "today": "ಇಂದು",
+        "assistant": "🤖 WeatherGPT", "assistant_desc": "ಹವಾಮಾನದ ಬಗ್ಗೆ ಏನು ಬೇಕಾದರೂ ಕೇಳಿ.",
         "chat_placeholder": "ಇಂದಿನ ಹವಾಮಾನದ ಬಗ್ಗೆ ಕೇಳಿ...",
         "voice_received": "🎙️ ಧ್ವನಿ ರೆಕಾರ್ಡಿಂಗ್ ಸ್ವೀಕರಿಸಲಾಗಿದೆ. ಇದನ್ನು ಹವಾಮಾನ ಪ್ರಶ್ನೆಯಾಗಿ ಪರಿವರ್ತಿಸಲು Speech-to-Text API ಸಂಪರ್ಕಿಸಿ.",
         "city_not_found": "❌ ನಗರ ಕಂಡುಬಂದಿಲ್ಲ. ದಯವಿಟ್ಟು ಸರಿಯಾದ ನಗರವನ್ನು ನಮೂದಿಸಿ.",
@@ -234,36 +175,22 @@ LANGUAGES = {
         "comfortable": "🌤️ ಇಂದು ತಾಪಮಾನ ಆರಾಮದಾಯಕವಾಗಿರುತ್ತದೆ.",
         "good_outdoor": "🚶 ಹೊರಾಂಗಣ ಚಟುವಟಿಕೆಗಳಿಗೆ ಹವಾಮಾನ ಉತ್ತಮವಾಗಿದೆ.",
         "outdoor_warning": "⚠️ ಹೊರಾಂಗಣ ಯೋಜನೆಗಳಿಗೆ ಸ್ವಲ್ಪ ಮುನ್ನೆಚ್ಚರಿಕೆ ಅಗತ್ಯವಿರಬಹುದು.",
-        "weather_update": "🌤️ ಹವಾಮಾನ ಮಾಹಿತಿ",
-        "condition": "ಸ್ಥಿತಿ",
-        "main_title": "WeatherGPT 🌤️",
-        "main_subtitle": "ನಿಮ್ಮ ಬುದ್ಧಿವಂತ ಹವಾಮಾನ ಸಹಾಯಕ",
+        "weather_update": "🌤️ ಹವಾಮಾನ ಮಾಹಿತಿ", "condition": "ಸ್ಥಿತಿ",
+        "main_title": "WeatherGPT 🌤️", "main_subtitle": "ನಿಮ್ಮ ಬುದ್ಧಿವಂತ ಹವಾಮಾನ ಸಹಾಯಕ",
         "footer": "WeatherGPT • AI ಹವಾಮಾನ ಸಹಾಯಕ • ಹ್ಯಾಕಥಾನ್ ಪ್ರೋಟೋಟೈಪ್",
-        "enter_city": "ನಗರವನ್ನು ನಮೂದಿಸಿ...",
-        "language": "🌐 ಭಾಷೆ",
-        "loading_weather": "ಹವಾಮಾನ ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
-        "hackathon": "ಹ್ಯಾಕಥಾನ್ ಪ್ರೋಟೋಟೈಪ್",
-        "weather_ai": "ಹವಾಮಾನ + AI",
-        "unknown": "ತಿಳಿದಿಲ್ಲ",
+        "enter_city": "ನಗರವನ್ನು ನಮೂದಿಸಿ...", "language": "🌐 ಭಾಷೆ",
+        "loading_weather": "ಹವಾಮಾನ ಲೋಡ್ ಆಗುತ್ತಿದೆ...", "hackathon": "ಹ್ಯಾಕಥಾನ್ ಪ್ರೋಟೋಟೈಪ್",
+        "weather_ai": "ಹವಾಮಾನ + AI", "unknown": "ತಿಳಿದಿಲ್ಲ",
     },
     "Malayalam": {
-        "search_location": "📍 സ്ഥലം തിരയുക",
-        "temperature": "🌡️ താപനില",
-        "celsius": "സെൽഷ്യസ് (°C)",
-        "fahrenheit": "ഫാരൻഹീറ്റ് (°F)",
-        "current_weather": "നിലവിലെ കാലാവസ്ഥ",
-        "feels_like": "അനുഭവപ്പെടുന്ന താപനില",
-        "todays_high": "ഇന്നത്തെ ഉയർന്ന താപനില",
-        "todays_low": "ഇന്നത്തെ കുറഞ്ഞ താപനില",
-        "weather_details": "📊 കാലാവസ്ഥാ വിവരങ്ങൾ",
-        "humidity": "💧 ഈർപ്പം",
-        "wind": "💨 കാറ്റ്",
-        "rain": "🌧️ മഴ",
-        "pressure": "🔵 മർദ്ദം",
-        "forecast": "📅 7 ദിവസത്തെ കാലാവസ്ഥാ പ്രവചനം",
-        "today": "ഇന്ന്",
-        "assistant": "🤖 WeatherGPT",
-        "assistant_desc": "കാലാവസ്ഥയെക്കുറിച്ച് എന്തും ചോദിക്കാം.",
+        "search_location": "📍 സ്ഥലം തിരയുക", "temperature": "🌡️ താപനില",
+        "celsius": "സെൽഷ്യസ് (°C)", "fahrenheit": "ഫാരൻഹീറ്റ് (°F)",
+        "current_weather": "നിലവിലെ കാലാവസ്ഥ", "feels_like": "അനുഭവപ്പെടുന്ന താപനില",
+        "todays_high": "ഇന്നത്തെ ഉയർന്ന താപനില", "todays_low": "ഇന്നത്തെ കുറഞ്ഞ താപനില",
+        "weather_details": "📊 കാലാവസ്ഥാ വിവരങ്ങൾ", "humidity": "💧 ഈർപ്പം",
+        "wind": "💨 കാറ്റ്", "rain": "🌧️ മഴ", "pressure": "🔵 മർദ്ദം",
+        "forecast": "📅 7 ദിവസത്തെ കാലാവസ്ഥാ പ്രവചനം", "today": "ഇന്ന്",
+        "assistant": "🤖 WeatherGPT", "assistant_desc": "കാലാവസ്ഥയെക്കുറിച്ച് എന്തും ചോദിക്കാം.",
         "chat_placeholder": "ഇന്നത്തെ കാലാവസ്ഥയെക്കുറിച്ച് ചോദിക്കുക...",
         "voice_received": "🎙️ ശബ്ദ റെക്കോർഡിംഗ് ലഭിച്ചു. ഇത് കാലാവസ്ഥാ ചോദ്യമാക്കി മാറ്റാൻ Speech-to-Text API ബന്ധിപ്പിക്കുക.",
         "city_not_found": "❌ നഗരം കണ്ടെത്താനായില്ല. സാധുവായ നഗരം നൽകുക.",
@@ -276,24 +203,14 @@ LANGUAGES = {
         "comfortable": "🌤️ ഇന്ന് താപനില സുഖകരമായിരിക്കും.",
         "good_outdoor": "🚶 പുറം പ്രവർത്തനങ്ങൾക്ക് കാലാവസ്ഥ നല്ലതാണ്.",
         "outdoor_warning": "⚠️ പുറം പ്രവർത്തനങ്ങൾക്ക് ചില മുൻകരുതലുകൾ ആവശ്യമായി വരാം.",
-        "weather_update": "🌤️ കാലാവസ്ഥാ അപ്‌ഡേറ്റ്",
-        "condition": "അവസ്ഥ",
-        "main_title": "WeatherGPT 🌤️",
-        "main_subtitle": "നിങ്ങളുടെ ബുദ്ധിമാനായ കാലാവസ്ഥാ സഹായി",
+        "weather_update": "🌤️ കാലാവസ്ഥാ അപ്‌ഡേറ്റ്", "condition": "അവസ്ഥ",
+        "main_title": "WeatherGPT 🌤️", "main_subtitle": "നിങ്ങളുടെ ബുദ്ധിമാനായ കാലാവസ്ഥാ സഹായി",
         "footer": "WeatherGPT • AI കാലാവസ്ഥാ സഹായി • ഹാക്കത്തോൺ പ്രോട്ടോടൈപ്പ്",
-        "enter_city": "നഗരം നൽകുക...",
-        "language": "🌐 ഭാഷ",
-        "loading_weather": "കാലാവസ്ഥ ലോഡ് ചെയ്യുന്നു...",
-        "hackathon": "ഹാക്കത്തോൺ പ്രോട്ടോടൈപ്പ്",
-        "weather_ai": "കാലാവസ്ഥ + AI",
-        "unknown": "അജ്ഞാതം",
+        "enter_city": "നഗരം നൽകുക...", "language": "🌐 ഭാഷ",
+        "loading_weather": "കാലാവസ്ഥ ലോഡ് ചെയ്യുന്നു...", "hackathon": "ഹാക്കത്തോൺ പ്രോട്ടോടൈപ്പ്",
+        "weather_ai": "കാലാവസ്ഥ + AI", "unknown": "അജ്ഞാതം",
     },
 }
-
-
-# =============================================================
-# WEATHER-CODE TRANSLATIONS (Open-Meteo WMO codes)
-# =============================================================
 
 WEATHER_TRANSLATIONS = {
     "English": {
@@ -377,30 +294,18 @@ WEATHER_TRANSLATIONS = {
 }
 
 DAY_TRANSLATIONS = {
-    "English": {
-        "Monday": "Monday", "Tuesday": "Tuesday", "Wednesday": "Wednesday",
-        "Thursday": "Thursday", "Friday": "Friday", "Saturday": "Saturday", "Sunday": "Sunday",
-    },
-    "Hindi": {
-        "Monday": "सोमवार", "Tuesday": "मंगलवार", "Wednesday": "बुधवार",
-        "Thursday": "गुरुवार", "Friday": "शुक्रवार", "Saturday": "शनिवार", "Sunday": "रविवार",
-    },
-    "Telugu": {
-        "Monday": "సోమవారం", "Tuesday": "మంగళవారం", "Wednesday": "బుధవారం",
-        "Thursday": "గురువారం", "Friday": "శుక్రవారం", "Saturday": "శనివారం", "Sunday": "ఆదివారం",
-    },
-    "Tamil": {
-        "Monday": "திங்கள்", "Tuesday": "செவ்வாய்", "Wednesday": "புதன்",
-        "Thursday": "வியாழன்", "Friday": "வெள்ளி", "Saturday": "சனி", "Sunday": "ஞாயிறு",
-    },
-    "Kannada": {
-        "Monday": "ಸೋಮವಾರ", "Tuesday": "ಮಂಗಳವಾರ", "Wednesday": "ಬುಧವಾರ",
-        "Thursday": "ಗುರುವಾರ", "Friday": "ಶುಕ್ರವಾರ", "Saturday": "ಶನಿವಾರ", "Sunday": "ಭಾನುವಾರ",
-    },
-    "Malayalam": {
-        "Monday": "തിങ്കളാഴ്ച", "Tuesday": "ചൊവ്വാഴ്ച", "Wednesday": "ബുധനാഴ്ച",
-        "Thursday": "വ്യാഴാഴ്ച", "Friday": "വെള്ളിയാഴ്ച", "Saturday": "ശനിയാഴ്ച", "Sunday": "ഞായറാഴ്ച",
-    },
+    "English": {"Monday": "Monday", "Tuesday": "Tuesday", "Wednesday": "Wednesday",
+        "Thursday": "Thursday", "Friday": "Friday", "Saturday": "Saturday", "Sunday": "Sunday"},
+    "Hindi": {"Monday": "सोमवार", "Tuesday": "मंगलवार", "Wednesday": "बुधवार",
+        "Thursday": "गुरुवार", "Friday": "शुक्रवार", "Saturday": "शनिवार", "Sunday": "रविवार"},
+    "Telugu": {"Monday": "సోమవారం", "Tuesday": "మంగళవారం", "Wednesday": "బుధవారం",
+        "Thursday": "గురువారం", "Friday": "శుక్రవారం", "Saturday": "శనివారం", "Sunday": "ఆదివారం"},
+    "Tamil": {"Monday": "திங்கள்", "Tuesday": "செவ்வாய்", "Wednesday": "புதன்",
+        "Thursday": "வியாழன்", "Friday": "வெள்ளி", "Saturday": "சனி", "Sunday": "ஞாயிறு"},
+    "Kannada": {"Monday": "ಸೋಮವಾರ", "Tuesday": "ಮಂಗಳವಾರ", "Wednesday": "ಬುಧವಾರ",
+        "Thursday": "ಗುರುವಾರ", "Friday": "ಶುಕ್ರವಾರ", "Saturday": "ಶನಿವಾರ", "Sunday": "ಭಾನುವಾರ"},
+    "Malayalam": {"Monday": "തിങ്കളാഴ്ച", "Tuesday": "ചൊവ്വാഴ്ച", "Wednesday": "ബുധനാഴ്ച",
+        "Thursday": "വ്യാഴാഴ്ച", "Friday": "വെള്ളിയാഴ്ച", "Saturday": "ശനിയാഴ്ച", "Sunday": "ഞായറാഴ്ച"},
 }
 
 RAIN_KEYWORDS = [
@@ -434,7 +339,6 @@ st.markdown(
     .top-chat h2 { margin: 0; color: white; }
     .top-chat p { color: #dbeafe; margin-top: 5px; }
 
-
     .forecast-icon {
         font-size: 48px;
         line-height: 1.2;
@@ -444,6 +348,18 @@ st.markdown(
     .big-temperature {
         font-size: 52px;
         font-weight: bold;
+    }
+
+    .centered-header {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .centered-header h1 {
+        margin-bottom: 0;
+    }
+    .centered-header p {
+        color: #94a3b8;
+        margin-top: 2px;
     }
     </style>
     """,
@@ -461,31 +377,20 @@ FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
 
 @st.cache_data(ttl=3600, show_spinner=False)
 def get_coordinates(city: str):
-    """Resolve a city name to coordinates."""
     city = (city or "").strip()
     if not city:
         return None
-
-    params = {
-        "name": city,
-        "count": 1,
-        "language": "en",
-        "format": "json",
-    }
-
+    params = {"name": city, "count": 1, "language": "en", "format": "json"}
     try:
         response = requests.get(GEOCODE_URL, params=params, timeout=10)
         response.raise_for_status()
         data = response.json()
     except (requests.RequestException, ValueError):
         return None
-
     results = data.get("results") or []
     if not results:
         return None
-
     result = results[0]
-
     try:
         return {
             "latitude": float(result["latitude"]),
@@ -499,7 +404,6 @@ def get_coordinates(city: str):
 
 @st.cache_data(ttl=600, show_spinner=False)
 def get_weather(latitude: float, longitude: float):
-    """Fetch current conditions and a 7-day forecast."""
     params = {
         "latitude": latitude,
         "longitude": longitude,
@@ -514,40 +418,28 @@ def get_weather(latitude: float, longitude: float):
         "forecast_days": 7,
         "timezone": "auto",
     }
-
     try:
         response = requests.get(FORECAST_URL, params=params, timeout=10)
         response.raise_for_status()
         data = response.json()
     except (requests.RequestException, ValueError):
         return None
-
     if not isinstance(data, dict) or "current" not in data or "daily" not in data:
         return None
-
     return data
 
 
 def weather_description(code, language: str):
-    """Return (icon, translated label) for a WMO weather code."""
-    table = WEATHER_TRANSLATIONS.get(
-        language,
-        WEATHER_TRANSLATIONS["English"],
-    )
-    fallback = (
-        "🌤️",
-        LANGUAGES.get(language, LANGUAGES["English"])["unknown"],
-    )
+    table = WEATHER_TRANSLATIONS.get(language, WEATHER_TRANSLATIONS["English"])
+    fallback = ("🌤️", LANGUAGES.get(language, LANGUAGES["English"])["unknown"])
     try:
         normalized_code = int(float(code))
     except (TypeError, ValueError):
         normalized_code = -1
-
     return table.get(normalized_code, fallback)
 
 
 def safe_float(value, default=0.0):
-    """Convert an API value to float without crashing the UI."""
     try:
         return float(value)
     except (TypeError, ValueError):
@@ -555,7 +447,6 @@ def safe_float(value, default=0.0):
 
 
 def safe_int(value, default=0):
-    """Convert an API value to int without crashing the UI."""
     try:
         return int(round(float(value)))
     except (TypeError, ValueError):
@@ -563,23 +454,14 @@ def safe_int(value, default=0):
 
 
 def convert_temperature(value, unit_is_fahrenheit: bool):
-    """Convert Celsius to the selected display unit."""
     value = safe_float(value)
     return value * 9 / 5 + 32 if unit_is_fahrenheit else value
 
 
 def answer_weather_question(
-    question: str,
-    t: dict,
-    current_temp: float,
-    rain_chance: int,
-    humidity: float,
-    wind_speed: float,
-    condition: str,
-    symbol: str,
-    location: dict,
+    question: str, t: dict, current_temp: float, rain_chance: int,
+    humidity: float, wind_speed: float, condition: str, symbol: str, location: dict,
 ) -> str:
-    """Return a small rule-based weather response."""
     q = (question or "").casefold().strip()
 
     if any(word.casefold() in q for word in RAIN_KEYWORDS):
@@ -614,8 +496,8 @@ def answer_weather_question(
 if "language" not in st.session_state:
     st.session_state.language = "English"
 
-if "last_question" not in st.session_state:
-    st.session_state.last_question = None
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []  # list of (question, answer) tuples
 
 
 # =============================================================
@@ -651,15 +533,10 @@ with st.sidebar:
     st.divider()
 
     city = st.text_input(
-        t["search_location"],
-        value="Hyderabad",
-        placeholder=t["enter_city"],
+        t["search_location"], value="Hyderabad", placeholder=t["enter_city"],
     ).strip()
 
-    unit = st.selectbox(
-        t["temperature"],
-        [t["celsius"], t["fahrenheit"]],
-    )
+    unit = st.selectbox(t["temperature"], [t["celsius"], t["fahrenheit"]])
 
     st.divider()
     st.caption(t["hackathon"])
@@ -667,7 +544,9 @@ with st.sidebar:
 
 
 # =============================================================
-# FETCH LOCATION + WEATHER
+# FETCH LOCATION + WEATHER + COMPUTE EVERYTHING UP FRONT
+# (moved above the chat UI so the reply has data ready immediately,
+#  and everything below the chat box naturally renders after it)
 # =============================================================
 
 with st.spinner(t["loading_weather"]):
@@ -695,59 +574,55 @@ daily_rain_raw = daily.get("precipitation_probability_max") or []
 daily_wind_raw = daily.get("wind_speed_10m_max") or []
 
 forecast_count = min(
-    7,
-    len(daily_times),
-    len(daily_codes),
-    len(daily_highs_raw),
-    len(daily_lows_raw),
-    len(daily_rain_raw),
-    len(daily_wind_raw),
+    7, len(daily_times), len(daily_codes), len(daily_highs_raw),
+    len(daily_lows_raw), len(daily_rain_raw), len(daily_wind_raw),
 )
 
 if forecast_count == 0:
     st.error(t["weather_error"])
     st.stop()
 
-
-# =============================================================
-# TEMPERATURE UNIT CONVERSION
-# =============================================================
-
 unit_is_fahrenheit = unit == t["fahrenheit"]
 symbol = "°F" if unit_is_fahrenheit else "°C"
 
-current_temp = convert_temperature(
-    current.get("temperature_2m"),
-    unit_is_fahrenheit,
-)
-feels_like = convert_temperature(
-    current.get("apparent_temperature"),
-    unit_is_fahrenheit,
-)
+current_temp = convert_temperature(current.get("temperature_2m"), unit_is_fahrenheit)
+feels_like = convert_temperature(current.get("apparent_temperature"), unit_is_fahrenheit)
 
-highs = [
-    convert_temperature(value, unit_is_fahrenheit)
-    for value in daily_highs_raw[:forecast_count]
-]
-lows = [
-    convert_temperature(value, unit_is_fahrenheit)
-    for value in daily_lows_raw[:forecast_count]
-]
+highs = [convert_temperature(v, unit_is_fahrenheit) for v in daily_highs_raw[:forecast_count]]
+lows = [convert_temperature(v, unit_is_fahrenheit) for v in daily_lows_raw[:forecast_count]]
+
+current_code = safe_int(current.get("weather_code"))
+icon, condition = weather_description(current_code, language)
+
+current_humidity = safe_float(current.get("relative_humidity_2m"))
+current_wind = safe_float(current.get("wind_speed_10m"))
+current_precipitation = safe_float(current.get("precipitation"))
+current_pressure = safe_float(current.get("surface_pressure"))
+
+rain_chance_today = safe_int(daily_rain_raw[0])
+
+location_name = escape(location["name"])
+country_name = escape(location["country"])
 
 
 # =============================================================
-# TOP SECTION — TITLE + CHAT INPUT
+# TOP SECTION — CENTERED TITLE, CHATBOT CENTERED + WIDER BELOW IT
 # =============================================================
 
-title_col, chatbot_col = st.columns([5, 3])
+st.markdown(
+    f"""
+    <div class="centered-header">
+        <h1>{escape(t["main_title"])}</h1>
+        <p>{escape(t["main_subtitle"])}</p>
+        <p>📍 {location_name}, {country_name}</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
-with title_col:
-    st.title(t["main_title"])
-    st.write(t["main_subtitle"])
-
-    location_name = escape(location["name"])
-    country_name = escape(location["country"])
-    st.caption(f"📍 {location_name}, {country_name}")
+# Wider centered column for the chatbot — narrow gutters on each side
+# instead of a half-width side column, so it fills more of the screen.
+_, chatbot_col, _ = st.columns([1, 10, 1])
 
 with chatbot_col:
     st.markdown(
@@ -760,41 +635,41 @@ with chatbot_col:
         unsafe_allow_html=True,
     )
 
-    chat_col, voice_col = st.columns([5, 1])
+    chat_col, voice_col = st.columns([6, 1])
 
     with chat_col:
         question = st.chat_input(t["chat_placeholder"])
 
     with voice_col:
-        # audio_input was introduced in newer Streamlit releases.
-        # Keep the app usable on older installations instead of crashing.
         if hasattr(st, "audio_input"):
-            audio = st.audio_input(
-                "🎙️",
-                label_visibility="collapsed",
-            )
+            audio = st.audio_input("🎙️", label_visibility="collapsed")
         else:
             audio = None
             st.caption("🎙️")
 
-if audio:
-    st.info(t["voice_received"])
+    if audio:
+        st.info(t["voice_received"])
 
-if question:
-    st.session_state.last_question = question
+    if question:
+        answer = answer_weather_question(
+            question, t, current_temp, rain_chance_today,
+            current_humidity, current_wind, condition, symbol, location,
+        )
+        st.session_state.chat_history.append((question, answer))
+
+    # Render the conversation right here, directly under the input —
+    # this is what keeps replies "attached" to the chat box instead of
+    # falling to the bottom of the page after the forecast section.
+    if st.session_state.chat_history:
+        with st.container(height=260):
+            for q, a in st.session_state.chat_history:
+                st.chat_message("user").write(q)
+                st.chat_message("assistant").write(a)
 
 
 # =============================================================
-# CURRENT WEATHER
+# CURRENT WEATHER  (renders below the chat box, pushed down naturally)
 # =============================================================
-
-current_code = safe_int(current.get("weather_code"))
-icon, condition = weather_description(current_code, language)
-
-current_humidity = safe_float(current.get("relative_humidity_2m"))
-current_wind = safe_float(current.get("wind_speed_10m"))
-current_precipitation = safe_float(current.get("precipitation"))
-current_pressure = safe_float(current.get("surface_pressure"))
 
 with st.container(border=True):
     st.subheader(f"📍 {location_name}, {country_name}")
@@ -837,36 +712,22 @@ st.subheader(t["forecast"])
 
 forecast_columns = st.columns(forecast_count)
 try:
-    first_forecast_date = datetime.strptime(
-        daily_times[0],
-        "%Y-%m-%d",
-    ).date()
+    first_forecast_date = datetime.strptime(daily_times[0], "%Y-%m-%d").date()
 except (TypeError, ValueError):
     st.error(t["weather_error"])
     st.stop()
 
 for i, col in enumerate(forecast_columns):
-
-    forecast_date = datetime.strptime(
-        daily_times[i],
-        "%Y-%m-%d",
-    ).date()
+    forecast_date = datetime.strptime(daily_times[i], "%Y-%m-%d").date()
 
     if forecast_date == first_forecast_date:
         day = t["today"]
     else:
         english_day = forecast_date.strftime("%A")
-        day = DAY_TRANSLATIONS[language].get(
-            english_day,
-            english_day,
-        )
+        day = DAY_TRANSLATIONS[language].get(english_day, english_day)
 
     formatted_date = forecast_date.strftime("%d %b %Y")
-
-    day_icon, day_condition = weather_description(
-        daily_codes[i],
-        language,
-    )
+    day_icon, day_condition = weather_description(daily_codes[i], language)
 
     day_high = safe_float(highs[i])
     day_low = safe_float(lows[i])
@@ -874,64 +735,18 @@ for i, col in enumerate(forecast_columns):
     day_wind = safe_float(daily_wind_raw[i])
 
     with col:
-
-        # Use Streamlit's native container
         with st.container(border=True):
-
-            st.markdown(
-                f"### {day}"
-            )
-
+            st.markdown(f"### {day}")
             st.caption(formatted_date)
-
             st.markdown(
                 f"<div class='forecast-icon'>{escape(day_icon)}</div>",
                 unsafe_allow_html=True,
             )
-
             st.write(day_condition)
-
-            st.markdown(
-                f"**{day_high:.1f}{symbol}**"
-            )
-
-            st.caption(
-                f"{t['todays_low']}: {day_low:.1f}{symbol}"
-            )
-
-            st.write(
-                f"☔ {t['rain']}: {day_rain}%"
-            )
-
-            st.write(
-                f"💨 {t['wind']}: {day_wind:.1f} km/h"
-            )
-
-
-# =============================================================
-# CHATBOT RESPONSE
-# =============================================================
-
-if st.session_state.last_question:
-    st.write("")
-    st.chat_message("user").write(st.session_state.last_question)
-
-    rain_chance = safe_int(daily_rain_raw[0])
-
-    with st.chat_message("assistant"):
-        st.write(
-            answer_weather_question(
-                st.session_state.last_question,
-                t,
-                current_temp,
-                rain_chance,
-                current_humidity,
-                current_wind,
-                condition,
-                symbol,
-                location,
-            )
-        )
+            st.markdown(f"**{day_high:.1f}{symbol}**")
+            st.caption(f"{t['todays_low']}: {day_low:.1f}{symbol}")
+            st.write(f"☔ {t['rain']}: {day_rain}%")
+            st.write(f"💨 {t['wind']}: {day_wind:.1f} km/h")
 
 
 # =============================================================
@@ -940,14 +755,3 @@ if st.session_state.last_question:
 
 st.divider()
 st.caption(t["footer"])
-
-
-# =============================================================
-# DEVELOPMENT VALIDATION
-# =============================================================
-
-# This file is intentionally kept as a normal Streamlit script.
-# Run:
-#     python -m py_compile weathergpt_app_patched.py
-# then:
-#     streamlit run Frontend_UI_patched.py
